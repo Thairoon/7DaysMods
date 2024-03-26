@@ -15,7 +15,6 @@
 "OcbPinRecipes",
 "OcbStopFuelWaste",
 "OcbWayPointIcons",
-"Quantum Elevators",
 "QuickStack",
 "RealRad",
 "SphereII A Better Life",
