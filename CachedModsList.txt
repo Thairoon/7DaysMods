@@ -17,7 +17,6 @@
 "OcbStopFuelWaste",
 "OcbWayPointIcons",
 "QuickStack",
-"SkipNewsScreen",
 "SphereII A Better Life",
 "VehicleWeapon",
 "0xSteel-QuestExcludeCleared",
