@@ -1,0 +1,80 @@
+<configsB>
+    <append xpath="/recipes">
+        <recipe name="ForgeTier2" count="1" tags="learnable,attForgedObsession,perkForgeFreak" craft_time="300">
+			<ingredient name="resourceRockSmall" count="500"/>
+			<ingredient name="resourceClayLump" count="600"/>
+			<ingredient name="resourceLeather" count="35"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceMetalPipe" count="35"/>
+
+			<effect_group>
+		        <passive_effect name="CraftingIngredientCount" level="1,2" operation="perc_add" value="-.05,-.1" tags="resourceRockSmall,resourceClayLump,resourceLeather,resourceDuctTape,resourceMetalPipe"/>
+	        	<passive_effect name="CraftingIngredientCount" level="3,5" operation="perc_add" value="-.2,-.7" tags="resourceRockSmall,resourceClayLump,resourceLeather,resourceDuctTape,resourceMetalPipe"/>
+			</effect_group>
+		</recipe> 
+
+        <recipe name="ForgeTier3" count="1" craft_time="450" tags="learnable,attForgedObsession,perkForgeFreak">
+			<ingredient name="resourceRockSmall" count="2500"/>
+			<ingredient name="resourceClayLump" count="1600"/>
+			<ingredient name="resourceLeather" count="75"/>
+			<ingredient name="resourceDuctTape" count="35"/>
+			<ingredient name="resourceMetalPipe" count="75"/>
+
+			<effect_group>
+		        <passive_effect name="CraftingIngredientCount" level="1,2" operation="perc_add" value="-.05,-.1" tags="resourceRockSmall,resourceClayLump,resourceMetalPipe,resourceDuctTape,resourceNail"/>
+	        	<passive_effect name="CraftingIngredientCount" level="3,5" operation="perc_add" value="-.2,-.7" tags="resourceRockSmall,resourceClayLump,resourceMetalPipe,resourceDuctTape,resourceNail"/>
+			</effect_group>
+		</recipe> 
+
+		<recipe name="toolAnvilTier2" count="1" craft_time="300" tags="learnable,workbenchCrafting,attForgedObsession,perkForgeFreak">
+			<ingredient name="resourceForgedIron" count="500"/>
+			<ingredient name="resourceMetalPipe" count="250"/>
+        	<ingredient name="resourceNail" count="250"/>
+        	<ingredient name="resourceForgedSteel" count="150"/>	
+
+			<effect_group>
+		        <passive_effect name="CraftingIngredientCount" level="1,2" operation="perc_add" value="-.05,-.1" tags="resourceForgedIron,resourceNail,resourceMetalPipe,resourceForgedSteel"/>
+	        	<passive_effect name="CraftingIngredientCount" level="3,5" operation="perc_add" value="-.2,-.7" tags="resourceForgedIron,resourceNail,resourceMetalPipe,resourceForgedSteel"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="toolAnvilTier3" count="1" craft_time="450" tags="learnable,workbenchCrafting,attForgedObsession,perkForgeFreak">
+			<ingredient name="resourceForgedIron" count="1000"/>
+			<ingredient name="resourceMetalPipe" count="500"/>
+        	<ingredient name="resourceNail" count="500"/>
+        	<ingredient name="resourceForgedSteel" count="250"/>	
+
+			<effect_group>
+		        <passive_effect name="CraftingIngredientCount" level="1,2" operation="perc_add" value="-.05,-.1" tags="resourceForgedIron,resourceNail,resourceMetalPipe,resourceForgedSteel"/>
+	        	<passive_effect name="CraftingIngredientCount" level="3,5" operation="perc_add" value="-.2,-.7" tags="resourceForgedIron,resourceNail,resourceMetalPipe,resourceForgedSteel"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="toolBellowsTier2" count="1" craft_time="300" tags="learnable,workbenchCrafting,attForgedObsession,perkForgeFreak">
+			<ingredient name="resourceForgedSteel" count="150"/>
+			<ingredient name="resourceLeather" count="100"/>
+			<ingredient name="resourceMetalPipe" count="50"/>
+			<ingredient name="resourceDuctTape" count="75"/>
+			<ingredient name="resourceNail" count="75"/>
+
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,2" operation="perc_add" value="-.05,-.1" tags="resourceForgedSteel,resourceLeather,resourceMetalPipe,resourceDuctTape,resourceNail"/>
+				<passive_effect name="CraftingIngredientCount" level="3,5" operation="perc_add" value="-.2,-.7" tags="resourceForgedSteel,resourceLeather,resourceMetalPipe,resourceDuctTape,resourceNail"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="toolBellowsTier3" count="1" craft_time="450" tags="learnable,workbenchCrafting,attForgedObsession,perkForgeFreak">
+			<ingredient name="resourceForgedSteel" count="250"/>
+			<ingredient name="resourceLeather" count="125"/>
+			<ingredient name="resourceMetalPipe" count="100"/>
+			<ingredient name="resourceDuctTape" count="150"/>
+			<ingredient name="resourceNail" count="150"/>
+
+			<effect_group>
+		        <passive_effect name="CraftingIngredientCount" level="1,2" operation="perc_add" value="-.05,-.1" tags="resourceForgedSteel,resourceLeather,resourceMetalPipe,resourceDuctTape,resourceNail"/>
+	        	<passive_effect name="CraftingIngredientCount" level="3,5" operation="perc_add" value="-.2,-.7" tags="resourceForgedSteel,resourceLeather,resourceMetalPipe,resourceDuctTape,resourceNail"/>
+			</effect_group>
+		</recipe>
+	</append>
+</configsB>
+

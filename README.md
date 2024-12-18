@@ -1,1 +1,1 @@
-This repository contains the Files that Clients need to join Thairoon's 7 Days to Die Server
+This repository contains the Files that Clients need to join the WSH 7 Days to Die Community Server.

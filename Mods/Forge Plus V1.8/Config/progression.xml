@@ -1,0 +1,65 @@
+<configsB>
+	<append xpath="/progression/attributes">
+        <attribute name="attWSH" name_key="attWSHName" desc_key="attWSHDesc" icon="ui_da_mods_icon" min_level="1" max_level="1">
+            <effect_group>
+                <effect_description level="1" desc_key="attWSHRank01Desc" long_desc_key="attWSHRank01LongDesc"/>
+            </effect_group>
+        </attribute>
+    </append>
+	
+	<append xpath="/progression/crafting_skills">
+
+		<crafting_skill name="attForgedObsession" max_level="200"
+		parent="attCrafting" name_key="attForgedObsessionName" desc_key="attForgedObsessionDesc"
+		long_desc_key="attForgedObsessionLongDesc" icon="ui_tiered_forges_crafting_skill">
+
+			<display_entry icon="ForgeTier2" name_key="ForgeTier2Name" has_quality="false" unlock_level="65,200" >
+				<unlock_entry item="ForgeTier2" unlock_tier="1" />
+				<unlock_entry item="toolAnvilTier2" unlock_tier="1" />
+				<unlock_entry item="toolBellowsTier2" unlock_tier="1" />
+			</display_entry>
+
+			<display_entry icon="ForgeTier3" name_key="ForgeTier3Name" has_quality="false" unlock_level="200" >
+				<unlock_entry item="ForgeTier3" unlock_tier="1" />
+				<unlock_entry item="toolAnvilTier3" unlock_tier="1" />
+				<unlock_entry item="toolBellowsTier3" unlock_tier="1" />
+			</display_entry>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,200" value="1" tags="ForgeTier2" />
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="200" value="1" tags="ForgeTier3" />
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,200" value="1" tags="toolAnvilTier2" />
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="200" value="1" tags="toolAnvilTier3" />
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,200" value="1" tags="toolBellowsTier2" />
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="200" value="1" tags="toolBellowsTier3" />
+			</effect_group>
+		</crafting_skill>
+	</append>
+
+	<append xpath="/progression/perks">
+		<perk name="perkForgeFreak" parent="attWSH" min_level="0" max_level="5" base_skill_point_cost="1" name_key="perkForgeFreakName" desc_key="perkForgeFreakDesc" icon="ui_tiered_forges_crafting_skill">
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="Locked: Level 20"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="40" desc_key="Locked: Level 40"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="60" desc_key="Locked: Level 60"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="80" desc_key="Locked: Level 80"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="100" desc_key="Locked: Level 100"/></level_requirements>
+			
+			<effect_group>
+				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="ForgeFreak"/>
+					<passive_effect name="LootProb" operation="perc_add" value=".03" level="1"/>
+				<passive_effect name="LootProb" operation="perc_add" value=".06" level="2"/>
+				<passive_effect name="LootProb" operation="perc_add" value=".09" level="3"/>
+				<passive_effect name="LootProb" operation="perc_add" value=".12" level="4"/>
+				<passive_effect name="LootProb" operation="perc_add" value=".15" level="5"/>
+
+				<effect_description level="1" desc_key="ForgeRookieDesc" long_desc_key="ForgeRookieLongDesc"/>
+				<effect_description level="2" desc_key="ForgeNoviceDesc" long_desc_key="ForgeNoviceLongDesc"/>
+				<effect_description level="3" desc_key="BlacksmithDesc" long_desc_key="BlacksmithLongDesc"/>
+				<effect_description level="4" desc_key="MrSmeltDesc" long_desc_key="MrSmeltLongDesc"/>
+				<effect_description level="5" desc_key="CrazyForgeManDesc" long_desc_key="CrazyForgeManLongDesc"/>
+			</effect_group>
+		</perk>
+	</append>
+</configsB>

@@ -1,0 +1,10 @@
+<configsB>
+
+	
+	<append xpath="//trader_item_group[@name='schematicsModsCommon']">
+		<item name="toolAnvilTier2"/>
+		<item name="toolBellowsTier2"/>
+		<item name="toolAnvilTier3"/>
+		<item name="toolBellowsTier3"/>
+	</append>
+</configsB>

@@ -1,0 +1,5 @@
+<configs>
+	<append xpath="/lootcontainers/lootgroup[@name='groupElectricalDevices']">
+		<item name="ocbRemoteTurretPanelVariantHelper" loot_prob_template="veryLow"/>
+	</append>
+</configs>

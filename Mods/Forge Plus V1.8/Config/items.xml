@@ -1,0 +1,155 @@
+<configsB>
+    <append xpath="/items">
+        <item name="bookForgedObsession">
+            <property name="Extends" value="masterSkillMagazine"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="forged_obsession_magazine"/>	
+            <property name="Unlocks" value="attForgedObsession"/>
+            <property name="DescriptionKey" value="bookForgedObsessionDesc"/>
+            <property name="PickupJournalEntry" value="attForgedObsessionTip"/>
+            <property name="Stacknumber" value="250" />
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="attForgedObsession" level="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
+            </effect_group>
+        </item>
+
+        <item name="toolAnvilTier2">
+            <property name="UnlockedBy" value="attForgedObsession"/>
+            <property name="Tags" value="workstationSkill"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Msteel"/>
+            <property name="Weight" value="0"/>
+            <property name="Stacknumber" value="1"/> <!-- STK loot -->
+            <property name="EconomicValue" value="640"/>
+            <property name="Group" value="Tools/Traps"/>
+            <property name="DisplayType" value="toolAnvil"/>
+            <property name="ItemTypeIcon" value="forge"/>
+            <effect_group tiered="false">
+                <requirement name="!HoldingItemHasTags" tags="toolAnvilTier2"/>
+                    <passive_effect name="CraftingTime" operation="perc_add" value="-.61"/>
+                    <display_value name="dCraftingTime" value=".75"/>
+            </effect_group>
+        </item>
+
+        <item name="toolAnvilTier3">
+            <property name="UnlockedBy" value="attForgedObsession"/>
+            <property name="Tags" value="workstationSkill"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Msteel"/>
+            <property name="Weight" value="0"/>
+            <property name="Stacknumber" value="1"/> <!-- STK loot -->
+            <property name="EconomicValue" value="1040"/>
+            <property name="Group" value="Tools/Traps"/>
+            <property name="DisplayType" value="toolAnvil"/>
+            <property name="ItemTypeIcon" value="forge"/>
+            <effect_group tiered="false">
+                <requirement name="!HoldingItemHasTags" tags="toolAnvilTier3"/>
+                    <passive_effect name="CraftingTime" operation="perc_add" value="-.777"/>
+                    <display_value name="dCraftingTime" value="1"/>
+            </effect_group>
+        </item>
+
+        <item name="toolBellowsTier2">
+            <property name="UnlockedBy" value="attForgedObsession"/>
+            <property name="Tags" value="workstationSkill"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="MtoolBellows"/>
+            <property name="Stacknumber" value="1"/> <!-- STK resource -->
+            <property name="Weight" value="0"/>
+            <property name="EconomicValue" value="1000"/>
+            <property name="Group" value="Tools/Traps"/>
+            <property name="DisplayType" value="toolBellows"/>
+            <property name="ItemTypeIcon" value="forge"/>
+            <effect_group tiered="false">
+                <passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.61"/> <!-- this is essentially a multiplier -->
+                <display_value name="dCraftingSmeltTime" value=".75"/>
+            </effect_group>
+        </item>
+
+        <item name="toolBellowsTier3">
+            <property name="UnlockedBy" value="attForgedObsession"/>
+            <property name="Tags" value="workstationSkill"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="MtoolBellows"/>
+            <property name="Stacknumber" value="1"/> <!-- STK resource -->
+            <property name="Weight" value="0"/>
+            <property name="EconomicValue" value="1500"/>
+            <property name="Group" value="Tools/Traps"/>
+            <property name="DisplayType" value="toolBellows"/>
+            <property name="ItemTypeIcon" value="forge"/>
+            <effect_group tiered="false">
+                <passive_effect name="CraftingSmeltTime" operation="perc_add" value="-0.777"/> <!-- this is essentially a multiplier -->
+                <display_value name="dCraftingSmeltTime" value="1"/>
+            </effect_group>
+        </item>
+
+        <item name="unit_iron">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="CustomIcon" value="resourceScrapIron"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="99999"/>
+            <property name="Weight" value="1"/>
+            <property name="Group" value="Resources"/>
+            <property name="ResourceUnit" value="true"/>
+            <property name="MeltTimePerUnit" value=".2"/> <!-- forge smelting time -->
+            <property name="UserHidden" value="true"/>
+            <property name="CraftingIngredientTime" value=".5"/>
+            <property name="CreativeMode" value="None"/>
+        </item>
+
+        <item name="unit_clay">
+            <property name="Extends" value="unit_iron"/>
+            <property name="CustomIcon" value="resourceClayLump"/>
+            <property name="Material" value="MresourceClayLump"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="Stacknumber" value="99999"/>
+        </item>
+	    <item name="unit_brass">
+            <property name="Extends" value="unit_iron"/>
+            <property name="CustomIcon" value="resourceScrapBrass"/>
+            <property name="Material" value="Mbrass"/>
+            <property name="MeltTimePerUnit" value=".4"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="Stacknumber" value="99999"/>
+        </item>
+
+	    <item name="unit_lead">
+	        <property name="Extends" value="unit_iron"/>
+	        <property name="CustomIcon" value="resourceScrapLead"/>
+	        <property name="Material" value="Mlead_scrap"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="Stacknumber" value="99999"/>
+        </item>
+
+        <item name="unit_glass">
+            <property name="Extends" value="unit_iron"/>
+            <property name="CustomIcon" value="resourceCrushedSand"/>
+            <property name="Material" value="Mglass"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="Stacknumber" value="99999"/>
+        </item>
+
+        <item name="unit_stone">
+            <property name="Extends" value="unit_iron"/>
+            <property name="CustomIcon" value="resourceRockSmall"/>
+            <property name="Material" value="Mstone"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CraftingIngredientTime" value=".25"/>
+            <property name="Stacknumber" value="99999"/>
+        </item>
+        
+        
+
+    </append>
+</configsB>

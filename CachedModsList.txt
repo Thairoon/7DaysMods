@@ -12,11 +12,14 @@
 "OcbElectricityWireColors",
 "OcbPinRecipes",
 "OcbRemoteTurretControl",
+"OcbStartupOptimizer",
 "OcbPinRecipes",
 "OcbStopFuelWaste",
 "OcbWayPointIcons",
 "QuickStack",
-"RealRad",
+"SkipNewsScreen",
 "SphereII A Better Life",
-"VehicleWeapon"
+"VehicleWeapon",
+"0xSteel-QuestExcludeCleared",
+"Forge Plus V1.8"
 ]

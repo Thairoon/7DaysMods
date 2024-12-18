@@ -1,0 +1,39 @@
+<configsB>
+	<append xpath="/ui_display_info/crafting_category_display">
+		
+		<crafting_category_list display_type="ForgeTier2">
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="ForgeTier3">
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+		</crafting_category_list>
+
+	</append>
+
+	
+
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="toolBellowsTier2" display_group="workstationTools">
+			<display_entry name="dCraftingSmeltTimeForgeTier2" title_key="statCraftingSmeltTimeForgeTier2" display_type="Percent" display_leading_plus="true" negative_preferred="false"/>
+		</item_display_info>
+
+		<item_display_info display_type="toolAnvilTier2" display_group="workstationTools">
+			<display_entry name="dCraftingTimeForgeTier2" title_key="statCraftingTimeForgeTier2" display_type="Percent" display_leading_plus="true" negative_preferred="false"/>
+		</item_display_info>
+
+		<item_display_info display_type="toolBellowsTier3" display_group="workstationTools">
+			<display_entry name="dCraftingSmeltTimeForgeTier3" title_key="statCraftingSmeltTimeForgeTier3" display_type="Percent" display_leading_plus="true" negative_preferred="false"/>
+		</item_display_info>
+
+		<item_display_info display_type="toolAnvilTier3" display_group="workstationTools">
+			<display_entry name="dCraftingTimeForgeTier3" title_key="statCraftingTimeForgeTier3" display_type="Percent" display_leading_plus="true" negative_preferred="false"/>
+		</item_display_info>	
+	</append>		
+</configsB>

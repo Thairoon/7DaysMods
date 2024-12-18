@@ -1,0 +1,25 @@
+<configsB>
+	<append xpath="/xui/ruleset[@name='default']" >
+		<window_group name="workstation_ForgeTier2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowToolsForgeTier2" />
+	        <window name="windowInputForgeTier2" />
+	        <window name="windowOutputForgeTier2" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="workstation_ForgeTier3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowToolsForgeTier3" />
+	        <window name="windowInputForgeTier3" />
+	        <window name="windowOutputForgeTier3" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	</append>
+</configsB>
