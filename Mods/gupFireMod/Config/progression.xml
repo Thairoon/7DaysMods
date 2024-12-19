@@ -1,5 +1,0 @@
-<configs>
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@level='11,100']/@tags">,guppyFlamethrower</append>
-</configs> 
-
-<!-- by KageshiOP -->

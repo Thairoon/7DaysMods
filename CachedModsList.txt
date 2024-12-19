@@ -6,7 +6,6 @@
 "AH-64 Apache Helicopter",
 "CustomParticleLoaderMultiExplosion",
 "CustomPlayerActionManager",
-"gupFireMod",
 "Item Quality Degradation",
 "OcbClaimAutoRepair",
 "OcbElectricityHalfFencePost",
