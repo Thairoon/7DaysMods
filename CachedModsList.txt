@@ -1,4 +1,5 @@
 [
+"0_TFP_Harmony",
 "0-CustomParticleLoader",
 "0-Quartz",
 "0-SCore",
